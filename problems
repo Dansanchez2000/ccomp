@@ -1,0 +1,188 @@
+#include <iostream>
+
+using namespace std;
+ejercicio 1
+/*
+int main()
+{
+    int edad;
+    cout<< "Ingresar edad: "<<endl;
+    cin>>edad;
+
+    if(edad>=18) {
+            cout<<"mainyor de edad"<<endl;
+    }
+    else
+    {
+            cout<<"menor de edad"<<endl;
+    }
+
+    return 0;
+}
+*/
+ejercicio 2
+/*
+int main()
+{
+  int n;
+  int i;
+  i=1;
+  cout<< "ingresa numero: ",cin>>n;
+  cout<<i<<",";
+  while(i!=n)
+  {
+    i++;
+    cout<<i;
+    if(1!=n)
+     cout<<",";
+  }
+  
+  
+  
+}
+*/
+ejercicio 3
+/*
+int main()
+{
+    int x;
+    int y;
+    float promedio;
+
+    promedio=(float)(x+y)/2;
+
+    cout<<"Ingresa el primer numero : ", cin>>x;
+    cout<<"Ingresa el segundo numero : ", cin>>y;
+
+    if (x>y){
+
+        cout<<"El mayor es : "<<x<<endl;
+        cout<<"El menor es : "<<y<<endl;
+
+    }else{
+
+        cout<<"El mayor es : "<<y<<endl;
+        cout<<"El menor es : "<<x<<endl;
+
+    }
+
+    cout<<"El promedio es : "<<promedio<<endl;
+}
+*/
+ejercicio 4
+/*
+int main()
+{
+int numero1, numero2, cuadrado;
+
+    cout<<"Ingresar el primer numero : ", cin>>numero1;
+    cout<<"Ingresar el segundo numero : ", cin>>numero2;
+
+    if(numero1%2==0 && numero2%2==0){
+        cout<<"Ambos numeros son multiplos de 2"<<endl;
+    }else if(numero1%2!=0 && numero2%2!=0) {
+        cout<<"Ambos numeros no son multiplos de 2"<<endl;
+    }else if(numero1%2==0 && numero2%2!=0){
+        cout<<numero1<<" es multiplo de dos"<<endl;
+        cout<<numero2<<" no es multiplo de dos"<<endl;
+    }else{
+        cout<<numero1<<" es multiplo de dos"<<endl;
+        cout<<numero2<<" no es multiplo de dos"<<endl;
+    }
+
+    if(numero2%numero1==0){
+        cout<<numero1<<" es multiplo de "<<numero2<<endl;
+    }else if(numero1%numero2==0){
+        cout<<numero2<<" es multiplo de "<<numero1<<endl;
+    }
+
+    cuadrado=numero1*numero1;
+
+    if(cuadrado==numero2){
+        cout<<"el primer numero elevado al cuadrado es igual al segundo"<<endl;
+    }
+
+}
+*/
+ejercicio 5
+/*
+int main(){
+  int a=0,i,n;
+    cout<<"ingrese numero: "<<endl;
+    cin>>n;
+    for(i=1;i<(n+1);i++){
+    if(n%i==0){ 
+         a++;
+       }
+    }
+    if(a!=2) {
+         cout<<"no es primo",
+       }  
+      else {
+        cout<<"si es primo";
+    }
+      
+  return 0;
+}
+*/
+ejercicio 8
+/*
+int main()
+{
+  int n,num,digit,cont=0;
+  cout<<"el numero positivo:",
+  cin>>num;
+  
+  n=num;
+  
+  do
+  {
+        digit= num%10;
+        cont= (cont*10)+digit;
+        num=num/10;
+  } while (num!=0);
+  
+  cout<<"el numero de reversa es",
+  
+    if (n==cont){
+      cout<<"si es palindrome";
+    }
+    else {
+      cout<< "no es palindrome";
+    }
+  return 0;
+}
+
+*/
+ejercicio 9
+/*
+int main()
+{
+  int a;
+  cout<<"ingresa year"<<endl;
+  cin>>a;
+  
+  if (a%4==0 && (a%100 !=0 || a % 400==0)){
+      cout<<"el year"<<a<<"si es bisiesto";
+      }
+  else{
+    cout<< el year<<a<<"no es bisiesto";
+  }
+  
+  return 0;
+}
+ */  
+exttra 
+int main ()
+{
+unsigned long int numero;
+  cout<<"ingresa numero: ";
+  cin>> numero;
+  
+  cout<<"el factorial del"<<numero<<"es";
+  int acumulador=1;
+  for(; numero>0; acumulador *= numero--);
+  cout<<acumulador<<".\n";
+  
+  return 0;
+}
