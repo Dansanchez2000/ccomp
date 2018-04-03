@@ -172,17 +172,4 @@ int main()
   return 0;
 }
  */  
-exttra 
-int main ()
-{
-unsigned long int numero;
-  cout<<"ingresa numero: ";
-  cin>> numero;
-  
-  cout<<"el factorial del"<<numero<<"es";
-  int acumulador=1;
-  for(; numero>0; acumulador *= numero--);
-  cout<<acumulador<<".\n";
-  
-  return 0;
-}
+
