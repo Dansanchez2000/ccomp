@@ -72,14 +72,15 @@ int main()
     cout<<"El promedio es : "<<promedio<<endl;
 }
 */
-ejercicio 4
-/*
+4 ejercicio
 int main()
 {
 int numero1, numero2, cuadrado;
 
-    cout<<"Ingresar el primer numero : ", cin>>numero1;
-    cout<<"Ingresar el segundo numero : ", cin>>numero2;
+    cout<<"Ingresar el primer numero : "; 
+    cin>>numero1;
+    cout<<"Ingresar el segundo numero : ";
+    cin>>numero2;
 
     if(numero1%2==0 && numero2%2==0){
         cout<<"Ambos numeros son multiplos de 2"<<endl;
@@ -87,11 +88,7 @@ int numero1, numero2, cuadrado;
         cout<<"Ambos numeros no son multiplos de 2"<<endl;
     }else if(numero1%2==0 && numero2%2!=0){
         cout<<numero1<<" es multiplo de dos"<<endl;
-        cout<<numero2<<" no es multiplo de dos"<<endl;
-    }else{
-        cout<<numero1<<" es multiplo de dos"<<endl;
-        cout<<numero2<<" no es multiplo de dos"<<endl;
-    }
+        cout<<numero2<<" no es multiplo de dos"<<endl;}
 
     if(numero2%numero1==0){
         cout<<numero1<<" es multiplo de "<<numero2<<endl;
