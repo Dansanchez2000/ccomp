@@ -73,6 +73,7 @@ int main()
 }
 */
 4 ejercicio
+
 int main()
 {
 int numero1, numero2, cuadrado;
